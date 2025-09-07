@@ -55,6 +55,20 @@ The `startup.sh` file is useful for certain Azure deployment scenarios:
 
 While Docker deployments use the Dockerfile's CMD instruction instead, keeping `startup.sh` provides flexibility for non-containerized deployments.
 
+## OpenAI API Endpoints
+
+When deployed to Azure Container Apps, the following endpoints are available for interacting with the OpenAI API:
+
+
+Use these URLs to explore, test, and integrate with the OpenAI API endpoints provided by this application.
+ When deployed to Azure Container Apps, use the following general endpoint format (replace `<your-app-url>` with your actual app URL):
+ - **Swagger UI:** `https://<your-app-url>/docs`
+ - **OpenAPI JSON:** `https://<your-app-url>/openapi.json`
+ - **ReDoc:** `https://<your-app-url>/redoc`
+ Use these URLs to explore, test, and integrate with the OpenAI API endpoints provided by this application.
+ 
 ## Next Steps
 
 To learn more about FastAPI, see [FastAPI](https://fastapi.tiangolo.com/).
+
+
