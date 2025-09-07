@@ -40,12 +40,12 @@
 
 ## Deploy to Azure Container Apps
 
+https://learn.microsoft.com/en-us/azure/developer/python/tutorial-containerize-simple-web-app?tabs=web-app-flask
+
 You can deploy the application to Azure Container Apps using the Azure CLI:
 
 ```
-az containerapp up \
-  --resource-group your-resource-group --name web-aca-app \
-  --ingress external --target-port 8000 --source .
+az containerapp up --resource-group your-resource-group --name web-aca-app  --ingress external --target-port 8000 --source .
 ```
 
 The URL for the deployed app is in the output of the `az containerapp up` command. Open the URL in your browser to see the web app running in Azure. The form of the URL will look like the following: `https://web-aca-app.<generated-text>.<location-info>.azurecontainerapps.io`, where the `<generated-text>` and `<location-info>` are unique to your deployment.
