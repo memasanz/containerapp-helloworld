@@ -1,0 +1,11 @@
+# Requirements for Jupyter notebook with API authentication
+jupyter
+notebook
+requests
+azure-identity
+matplotlib
+pandas
+python-dotenv
+
+# Optional - only needed if using MSAL examples
+# msal
